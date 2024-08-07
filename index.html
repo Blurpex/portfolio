@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js" defer></script>
+    <title>Haris Ahmad</title>
+</head>
+<body>
+    <!-- file system -->
+    <div class="container text white">
+        <p class="dir"><i class="fa-solid fa-folder"></i> /bin</p>
+        <p class="file-button"><i class="fa-solid fa-play"></i> help</p>
+        <p class="file-button"><i class="fa-solid fa-play"></i> education</p>
+        <p class="file-button"><i class="fa-solid fa-play"></i> project</p>
+        <p class="file-button"><i class="fa-solid fa-play"></i> tech</p>
+        <p class="file-button"><i class="fa-solid fa-play"></i> contact</p>
+        <p class="file-button"><i class="fa-solid fa-play"></i> award</p>
+        <p class="file-button"><i class="fa-solid fa-play"></i> certificate</p>
+    </div>
+
+    <!-- terminal -->
+    <div class="container">
+
+        <!-- about me -->
+        <div class="text">
+            <span class="green bold">haris@ahmad:~$</span>
+            <span class="white">cat aboutme.txt</span>
+            <div class="white">
+                <p><i class="fa-solid fa-code"></i> aspiring software developer</p>
+                <p><i class="fa-solid fa-graduation-cap"></i> computer science from penn state</p>
+                <p><i class="fa-solid fa-microchip"></i> java, python, javascript</p>
+                <p><i class="fa-solid fa-heart"></i> games, FC Barcelona, hiking</p>
+            </div>
+        </div>
+
+        <!-- input -->
+        <div>
+            <span class="text green bold">haris@ahmad:~$</span>
+            <label>
+                <input id="userInput" type="text" placeholder="type help...">
+            </label>
+        </div>
+
+        <div class="output text white">
+            
+            <!-- help -->
+            <div id="help" class="hidden">
+                <p>type ___ for more info</p>
+                <p>eg. education, award, project, ls, etc</p>
+            </div>
+            
+            <!-- education -->
+            <div id="education" class="hidden">
+                <p>- B.A. computer science</p>
+                <p>- pennsylvania state university</p>
+                <p>- 3.5 GPA</p>
+                <p>- 2020-2024</p>
+            </div>
+            
+            <!-- contacts -->
+            <div id="contact" class="hidden">
+                <p><a class="dir" href="https://www.linkedin.com/in/harisahmad24/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> linkedin
+                </a></p>
+                <p><a class="dir" href="https://github.com/blurpex/" target="_blank">
+                    <i class="fa-brands fa-github"></i> github
+                </a></p>
+                <p><i class="fa-solid fa-envelope"></i> harizahmad100@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (717) 461-0371</p>
+            </div>
+
+            <!-- projects -->
+            <div id="project" class="hidden">
+                <div>
+                    <span class="dir">restaurant_management</span>
+                    spring react postgres
+                </div>
+                <div>
+                    <a href="https://github.com/Blurpex/FIFAStation" target="_blank">
+                        <span class="dir">fifa_tracker</span>
+                        java android sqlite
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/Blurpex/text-compression" target="_blank">
+                        <span class="dir">text compression</span>
+                        java OOP
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/Blurpex/stock-trade" target="_blank">
+                        <span class="dir">stock_tracker</span>
+                        angular
+                    </a>
+                </div>
+            </div>
+
+            <!-- tech -->
+            <div id="tech" class="hidden">
+                <p>java javascript python spring</p>
+                <p>AWS docker linux SQL noSQL git</p>
+                <p>react angular hibernate stripe</p>
+                <p>keycloak html css</p>
+            </div>
+            
+            <!-- awards -->
+            <div id="award" class="hidden">
+                <p>- IEEE spring hack-a-thon (2nd)</p>
+                <p>- president's freshman award</p>
+                <p>- dean's list (x5)</p>
+            </div>
+
+            <!-- certificates -->
+            <div id="certificate" class="hidden">
+                <p>- AWS cloud practitioner</p>
+                <p>- spring boot 6, spring 3, & hibernate</p>
+            </div>
+            
+            <!-- others -->
+            <div id="ls" class="hidden dir bold">rick rolled<span class="white"> aboutme.txt</span></div>
+            <div id="pwd" class="hidden">/home/haris</div>
+        </div>
+    </div>
+</body>
+</html>
